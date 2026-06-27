@@ -3,18 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="MyBlog.css">
+    <title>Modern Company Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="child child1"></div>
-        <div class="child child2"></div>
-        <div class="child child3"></div>
-        <div class="child child4"></div>
-        <div class="child child5"></div>
-        <div class="child child6"></div>
-        <div class="child child7"></div>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Logo</div>
+
+            <ul class="nav-links">
+                <li><a href="#team">Team</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#pricing">Price</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO IMAGE -->
+    <section class="top">
+        <div class="top-content">
+            
+
+            <a href="#team" class="top-btn">
+                Learn More
+            </a>
+        </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section id="team" class="section">
+        <h2>THE TEAM</h2>
+        <p class="subtitle">The ones who run this company</p>
+
+        <div class="team-grid">
+
+            <div class="member">
+                <img src="https://www.w3schools.com/w3images/avatar.jpg" alt="">
+                <h3>John Doe</h3>
+                <span>CEO & Founder</span>
+                <p>Creative leader with years of experience.</p>
+                <button>Contact</button>
+            </div>
+
+            <div class="member">
+                <img src="https://www.w3schools.com/w3images/avatar.jpg" alt="">
+                <h3>Jane Doe</h3>
+                <span>Designer</span>
+                <p>Creating beautiful user experiences.</p>
+                <button>Contact</button>
+            </div>
+
+            <div class="member">
+                <img src="https://www.w3schools.com/w3images/avatar.jpg" alt="">
+                <h3>Mike Ross</h3>
+                <span>Architect</span>
+                <p>Designing scalable systems.</p>
+                <button>Contact</button>
+            </div>
+
+            <div class="member">
+                <img src="https://www.w3schools.com/w3images/avatar.jpg" alt="">
+                <h3>Dan Star</h3>
+                <span>Developer</span>
+                <p>Turning ideas into reality.</p>
+                <button>Contact</button>
+            </div>
+
+        </div>
+    </section>
+
+   <section class="work-section" id="work">
+
+    <div class="work-text">
+        <h2>Our Work</h2>
+
+        <p>
+            We are a web development and software solutions company specializing in modern websites, web applications, e-commerce platforms, database systems, and digital solutions that help businesses grow, improve efficiency, and reach customers online.
+        </p>
     </div>
+
+    <div class="work-grid">
+
+        <div class="work-card">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800" alt="">
+            <div class="work-content">
+                <h3>Customer 1</h3>
+                <h4>Trade</h4>
+                <p>Blablabla</p>
+                <p>Blablabla</p>
+                <p>Blablabla</p>
+                <p>Blablabla</p>
+            </div>
+        </div>
+
+        <div class="work-card">
+            <img src="https://images.unsplash.com/photo-1483347756197-71ef80e95f73?w=800" alt="">
+            <div class="work-content">
+                <h3>Customer 2</h3>
+                <h4>Trade</h4>
+                <p>Blablabla</p>
+                <p>Blablabla</p>
+                <p>Blablabla</p>
+                <p>Blablabla</p>
+            </div>
+        </div>
+
+        <div class="work-card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800" alt="">
+            <div class="work-content">
+                <h3>Customer 3</h3>
+                <h4>Trade</h4>
+                <p>Blablabla</p>
+                <p>Blablabla</p>
+                <p>Blablabla</p>
+                <p>Blablabla</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section">
+        <h2>PRICING</h2>
+        <p class="subtitle">Choose a pricing plan that fits your needs.</p>
+
+        <div class="pricing-grid">
+
+            <div class="price-card">
+                <h3>Basic</h3>
+                <p>$10 / month</p>
+                <button>Sign Up</button>
+            </div>
+
+            <div class="price-card featured">
+                <h3>Pro</h3>
+                <p>$25 / month</p>
+                <button>Sign Up</button>
+            </div>
+
+            <div class="price-card">
+                <h3>Premium</h3>
+                <p>$50 / month</p>
+                <button>Sign Up</button>
+            </div>
+
+        </div>
+    </section>
+
+   <section id="contact" class="contact-section">
+
+    <div class="contact-info">
+        <h2>Contact Us</h2>
+
+        <h3>Address</h3>
+
+        <p>Swing by for a cup of coffee, or whatever.</p>
+
+        <div class="info-item">
+             Chicago, US
+        </div>
+
+        <div class="info-item">
+             +00 1515151515
+        </div>
+
+        <div class="info-item">
+             test@test.com
+        </div>
+    </div>
+
+    <div class="contact-form-box">
+
+        <form>
+
+            <input type="text" placeholder="Name" required>
+
+            <input type="email" placeholder="Email" required>
+
+            <textarea placeholder="Message" required></textarea>
+
+            <div class="form-footer">
+
+                <label>
+                    <input type="checkbox" checked>
+                    I Like it!
+                </label>
+
+                <button type="submit">Send</button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- Contact Image -->
+<section class="contact-image">
+    <img src="https://www.w3schools.com/w3images/map.jpg" alt="Office Location">
+</section>
+
+    <!-- FOOTER -->
+    <footer>
+        <section class="social-section">
+    <h2>Follow Us</h2>
+
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+</section>
+        <p>Powered by Your Website</p>
+    </footer>
+
 </body>
 </html>
