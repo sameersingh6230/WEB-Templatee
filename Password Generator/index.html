@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Password generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Password generator</h1>
+  <p class="sub">Passwords are created in your browser and never leave this page.</p>
+
+  <div class="out">
+    <div id="pw" role="textbox" aria-readonly="true" aria-label="Generated password" tabindex="0"></div>
+    <button id="copy" type="button" aria-label="Copy password">Copy</button>
+  </div>
+
+  <div class="meter" aria-live="polite">
+    <div class="bar"><i id="fill"></i></div>
+    <div class="meta"><span id="label">Strength</span><span id="bits"></span></div>
+  </div>
+
+  <div class="row"><label for="len">Length</label><output id="lenOut">16</output></div>
+  <input id="len" type="range" min="6" max="64" value="16">
+
+  <fieldset>
+    <label class="opt"><input type="checkbox" id="lower" checked> Lowercase</label>
+    <label class="opt"><input type="checkbox" id="upper" checked> Uppercase</label>
+    <label class="opt"><input type="checkbox" id="nums" checked> Numbers</label>
+    <label class="opt"><input type="checkbox" id="syms" checked> Symbols</label>
+    <label class="opt"><input type="checkbox" id="ambig"> Skip look-alikes (O, 0, l, 1)</label>
+  </fieldset>
+
+  <button id="gen" class="primary gen" type="button">Generate new password</button>
+  <p id="msg" role="status"></p>
+</main>
+
+<script src="file.js"></script>
+</body>
+</html>
